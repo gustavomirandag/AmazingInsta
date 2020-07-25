@@ -28,6 +28,7 @@ namespace AmazingInsta.Microservices.PostMicroservice.Application.Api
         {
             services.AddControllers();
             services.AddDbContext<PostContext>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
