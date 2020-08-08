@@ -37,7 +37,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infrastructure", "3 - Infrastructure", "{5B8F6C48-E580-458D-8627-40EF2EC67D18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingInsta.Microservices.ProfileMicroservice.Domain", "AmazingInsta.Microservices.ProfileMicroservice.Domain\AmazingInsta.Microservices.ProfileMicroservice.Domain.csproj", "{0DCCD87A-7ADB-4AAF-ADB5-832364032EC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.Microservices.ProfileMicroservice.Domain", "AmazingInsta.Microservices.ProfileMicroservice.Domain\AmazingInsta.Microservices.ProfileMicroservice.Domain.csproj", "{0DCCD87A-7ADB-4AAF-ADB5-832364032EC8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{99AFAA7E-90B9-46CC-92A2-1F410D61604E}"
 EndProject
@@ -45,15 +45,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infrastructure", "3 - Infrastructure", "{AF46A426-0B5E-40A1-841D-969710DC98B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingInsta.Microservices.PostMicroservice.Domain", "AmazingInsta.Microservices.PostMicroservice.Domain\AmazingInsta.Microservices.PostMicroservice.Domain.csproj", "{1880289E-5B5F-402C-8987-0801B7B23E1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.Microservices.PostMicroservice.Domain", "AmazingInsta.Microservices.PostMicroservice.Domain\AmazingInsta.Microservices.PostMicroservice.Domain.csproj", "{1880289E-5B5F-402C-8987-0801B7B23E1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingInsta.Microservices.PostMicroservice.Infra.DataAccess", "AmazingInsta.Microservices.PostMicroservice.Infra.DataAccess\AmazingInsta.Microservices.PostMicroservice.Infra.DataAccess.csproj", "{62BCD6B4-1E6B-48B6-B771-6EF7329A4B5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.Microservices.PostMicroservice.Infra.DataAccess", "AmazingInsta.Microservices.PostMicroservice.Infra.DataAccess\AmazingInsta.Microservices.PostMicroservice.Infra.DataAccess.csproj", "{62BCD6B4-1E6B-48B6-B771-6EF7329A4B5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingInsta.Microservices.PostMicroservice.Application.Api", "AmazingInsta.Microservices.PostMicroservice.Application.Api\AmazingInsta.Microservices.PostMicroservice.Application.Api.csproj", "{F9009B75-C58B-4C6F-9BD0-5462E0ADC8A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.Microservices.PostMicroservice.Application.Api", "AmazingInsta.Microservices.PostMicroservice.Application.Api\AmazingInsta.Microservices.PostMicroservice.Application.Api.csproj", "{F9009B75-C58B-4C6F-9BD0-5462E0ADC8A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingInsta.Microservices.ProfileMicroservice.Application.Api", "AmazingInsta.Microservices.ProfileMicroservice.Application.Api\AmazingInsta.Microservices.ProfileMicroservice.Application.Api.csproj", "{02A3CA41-4D91-43FF-B0C5-65B7869E0063}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.Microservices.ProfileMicroservice.Application.Api", "AmazingInsta.Microservices.ProfileMicroservice.Application.Api\AmazingInsta.Microservices.ProfileMicroservice.Application.Api.csproj", "{02A3CA41-4D91-43FF-B0C5-65B7869E0063}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingInsta.Microservices.ProfileMicroservice.Infra.DataAccess", "AmazingInsta.Microservices.ProfileMicroservice.Infra.DataAccess\AmazingInsta.Microservices.ProfileMicroservice.Infra.DataAccess.csproj", "{D6303A15-3DAC-4D27-928A-48E7175DCC17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.Microservices.ProfileMicroservice.Infra.DataAccess", "AmazingInsta.Microservices.ProfileMicroservice.Infra.DataAccess\AmazingInsta.Microservices.ProfileMicroservice.Infra.DataAccess.csproj", "{D6303A15-3DAC-4D27-928A-48E7175DCC17}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.Microservices.IamMicroservice.Admin", "AmazingInsta.Microservices.IamMicroservice.Admin\AmazingInsta.Microservices.IamMicroservice.Admin.csproj", "{4B1FF87D-1C66-4F6E-8258-E675B2AC064B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.Microservices.IamMicroservice.Admin.Api", "AmazingInsta.Microservices.IamMicroservice.Admin.Api\AmazingInsta.Microservices.IamMicroservice.Admin.Api.csproj", "{31C7E8A7-B8EA-4AF1-87F5-1182BCB5FDBA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.Microservices.IamMicroservice.Admin.EntityFramework.Shared", "AmazingInsta.Microservices.IamMicroservice.Admin.EntityFramework.Shared\AmazingInsta.Microservices.IamMicroservice.Admin.EntityFramework.Shared.csproj", "{85132221-E83A-47EC-A914-45DCD2327051}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.Microservices.IamMicroservice.Admin.EntityFramework.SqlServer", "AmazingInsta.Microservices.IamMicroservice.Admin.EntityFramework.SqlServer\AmazingInsta.Microservices.IamMicroservice.Admin.EntityFramework.SqlServer.csproj", "{53117279-2ED7-4AEF-B553-60262B5409A0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.Microservices.IamMicroservice.STS.Identity", "AmazingInsta.Microservices.IamMicroservice.STS.Identity\AmazingInsta.Microservices.IamMicroservice.STS.Identity.csproj", "{CB44E8E9-AE10-4E14-B967-C1F2C6DEEC30}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.Microservices.IamMicroservice.Admin.EntityFramework.PostgreSQL", "AmazingInsta.Microservices.IamMicroservice.Admin.EntityFramework.PostgreSQL\AmazingInsta.Microservices.IamMicroservice.Admin.EntityFramework.PostgreSQL.csproj", "{99D23838-9D6F-4DA5-AC57-D2701323B2A7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.Microservices.IamMicroservice.Admin.EntityFramework.MySql", "AmazingInsta.Microservices.IamMicroservice.Admin.EntityFramework.MySql\AmazingInsta.Microservices.IamMicroservice.Admin.EntityFramework.MySql.csproj", "{F9343F62-45C0-49D8-968E-1AC1FA5617C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +99,34 @@ Global
 		{D6303A15-3DAC-4D27-928A-48E7175DCC17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6303A15-3DAC-4D27-928A-48E7175DCC17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6303A15-3DAC-4D27-928A-48E7175DCC17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B1FF87D-1C66-4F6E-8258-E675B2AC064B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B1FF87D-1C66-4F6E-8258-E675B2AC064B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B1FF87D-1C66-4F6E-8258-E675B2AC064B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B1FF87D-1C66-4F6E-8258-E675B2AC064B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31C7E8A7-B8EA-4AF1-87F5-1182BCB5FDBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31C7E8A7-B8EA-4AF1-87F5-1182BCB5FDBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31C7E8A7-B8EA-4AF1-87F5-1182BCB5FDBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31C7E8A7-B8EA-4AF1-87F5-1182BCB5FDBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85132221-E83A-47EC-A914-45DCD2327051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85132221-E83A-47EC-A914-45DCD2327051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85132221-E83A-47EC-A914-45DCD2327051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85132221-E83A-47EC-A914-45DCD2327051}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53117279-2ED7-4AEF-B553-60262B5409A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53117279-2ED7-4AEF-B553-60262B5409A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53117279-2ED7-4AEF-B553-60262B5409A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53117279-2ED7-4AEF-B553-60262B5409A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB44E8E9-AE10-4E14-B967-C1F2C6DEEC30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB44E8E9-AE10-4E14-B967-C1F2C6DEEC30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB44E8E9-AE10-4E14-B967-C1F2C6DEEC30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB44E8E9-AE10-4E14-B967-C1F2C6DEEC30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99D23838-9D6F-4DA5-AC57-D2701323B2A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99D23838-9D6F-4DA5-AC57-D2701323B2A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99D23838-9D6F-4DA5-AC57-D2701323B2A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99D23838-9D6F-4DA5-AC57-D2701323B2A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9343F62-45C0-49D8-968E-1AC1FA5617C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9343F62-45C0-49D8-968E-1AC1FA5617C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9343F62-45C0-49D8-968E-1AC1FA5617C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9343F62-45C0-49D8-968E-1AC1FA5617C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -113,6 +155,13 @@ Global
 		{F9009B75-C58B-4C6F-9BD0-5462E0ADC8A9} = {99AFAA7E-90B9-46CC-92A2-1F410D61604E}
 		{02A3CA41-4D91-43FF-B0C5-65B7869E0063} = {B7ADCA2E-74F7-49CC-AB1D-6E4535E25E40}
 		{D6303A15-3DAC-4D27-928A-48E7175DCC17} = {5B8F6C48-E580-458D-8627-40EF2EC67D18}
+		{4B1FF87D-1C66-4F6E-8258-E675B2AC064B} = {D66FB795-575D-4548-BE1A-C3AA4C4E0AF2}
+		{31C7E8A7-B8EA-4AF1-87F5-1182BCB5FDBA} = {D66FB795-575D-4548-BE1A-C3AA4C4E0AF2}
+		{85132221-E83A-47EC-A914-45DCD2327051} = {D66FB795-575D-4548-BE1A-C3AA4C4E0AF2}
+		{53117279-2ED7-4AEF-B553-60262B5409A0} = {D66FB795-575D-4548-BE1A-C3AA4C4E0AF2}
+		{CB44E8E9-AE10-4E14-B967-C1F2C6DEEC30} = {D66FB795-575D-4548-BE1A-C3AA4C4E0AF2}
+		{99D23838-9D6F-4DA5-AC57-D2701323B2A7} = {D66FB795-575D-4548-BE1A-C3AA4C4E0AF2}
+		{F9343F62-45C0-49D8-968E-1AC1FA5617C0} = {D66FB795-575D-4548-BE1A-C3AA4C4E0AF2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4948EDFA-AA2E-4574-AA7B-212BA2B04BCE}
