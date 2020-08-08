@@ -13,7 +13,7 @@ namespace AmazingInsta.Microservices.PostMicroservice.Infra.DataAccess.Contexts
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("DB CONNECTION STRING");
+            optionsBuilder.UseSqlServer("Server=tcp:amazinginsta-gustavo-db-server.database.windows.net,1433;Initial Catalog=amazinginsta-gustavo-db;Persist Security Info=False;User ID=gustavo;Password=@dsInf123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         }
     }
 }

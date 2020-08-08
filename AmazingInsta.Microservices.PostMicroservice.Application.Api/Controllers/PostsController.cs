@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using AmazingInsta.Microservices.PostMicroservice.Domain.AggregatesModel.PostAggregate;
 using AmazingInsta.Microservices.PostMicroservice.Infra.DataAccess.Contexts;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AmazingInsta.Microservices.PostMicroservice.Application.Api.Controllers
 {

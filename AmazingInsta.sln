@@ -69,6 +69,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.Microservices.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.Microservices.IamMicroservice.Admin.EntityFramework.MySql", "AmazingInsta.Microservices.IamMicroservice.Admin.EntityFramework.MySql\AmazingInsta.Microservices.IamMicroservice.Admin.EntityFramework.MySql.csproj", "{F9343F62-45C0-49D8-968E-1AC1FA5617C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingInsta.App.UI.WebApp", "AmazingInsta.App.UI.WebApp\AmazingInsta.App.UI.WebApp.csproj", "{E0D0EE02-5E4D-4D01-B6FD-723C232F05BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -127,6 +129,10 @@ Global
 		{F9343F62-45C0-49D8-968E-1AC1FA5617C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9343F62-45C0-49D8-968E-1AC1FA5617C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9343F62-45C0-49D8-968E-1AC1FA5617C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0D0EE02-5E4D-4D01-B6FD-723C232F05BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0D0EE02-5E4D-4D01-B6FD-723C232F05BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0D0EE02-5E4D-4D01-B6FD-723C232F05BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0D0EE02-5E4D-4D01-B6FD-723C232F05BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -162,6 +168,7 @@ Global
 		{CB44E8E9-AE10-4E14-B967-C1F2C6DEEC30} = {D66FB795-575D-4548-BE1A-C3AA4C4E0AF2}
 		{99D23838-9D6F-4DA5-AC57-D2701323B2A7} = {D66FB795-575D-4548-BE1A-C3AA4C4E0AF2}
 		{F9343F62-45C0-49D8-968E-1AC1FA5617C0} = {D66FB795-575D-4548-BE1A-C3AA4C4E0AF2}
+		{E0D0EE02-5E4D-4D01-B6FD-723C232F05BF} = {699ECF12-1EFC-46A6-AEAE-6EE3A0BC29E2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4948EDFA-AA2E-4574-AA7B-212BA2B04BCE}

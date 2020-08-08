@@ -15,6 +15,7 @@ using AmazingInsta.Microservices.IamMicroservice.Admin.EntityFramework.Shared.En
 using AmazingInsta.Microservices.IamMicroservice.Admin.Helpers;
 using AmazingInsta.Microservices.IamMicroservice.Admin.Configuration;
 using AmazingInsta.Microservices.IamMicroservice.Admin.Configuration.Constants;
+using Microsoft.IdentityModel.Logging;
 
 namespace AmazingInsta.Microservices.IamMicroservice.Admin
 {
@@ -74,6 +75,8 @@ namespace AmazingInsta.Microservices.IamMicroservice.Admin
             services.AddAuditEventLogging<AdminAuditLogDbContext, AuditLog>(Configuration);
 
             services.AddIdSHealthChecks<IdentityServerConfigurationDbContext, IdentityServerPersistedGrantDbContext, AdminIdentityDbContext, AdminLogDbContext, AdminAuditLogDbContext>(Configuration, rootConfiguration.AdminConfiguration);
+
+            IdentityModelEventSource.ShowPII = true;
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
