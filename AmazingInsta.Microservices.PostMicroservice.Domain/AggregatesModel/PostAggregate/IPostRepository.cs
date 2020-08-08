@@ -4,13 +4,7 @@ using System.Text;
 
 namespace AmazingInsta.Microservices.PostMicroservice.Domain.AggregatesModel.PostAggregate
 {
-    public class PostService
+    public interface IPostRepository
     {
-        private PostContext 
-
-        public bool AddPost(Post post)
-        {
-
-        }
     }
 }
