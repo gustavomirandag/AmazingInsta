@@ -276,6 +276,49 @@ namespace AmazingInsta.Microservices.IamMicroservice.Admin.Api.Controllers
 
             return Ok(usersDto);
         }
+
+        public class UserPasswordDto
+        {
+            public TUserDto user { get; set; }
+            public UserChangePasswordApiDto<TKey> password { get; set; }
+        }
+
+        /// <summary>
+        /// Cria um usuário com o Role de Profile
+        /// Profile Role Id = e313a205-0540-4d04-b0a7-ca0052804c06
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
+        [HttpPost("/api/UsersAndRoles")]
+        [ProducesResponseType(201)]
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<TUserDto>> PostProfile([FromBody] UserPasswordDto userPasswordDto)
+        {
+            if (!EqualityComparer<TKey>.Default.Equals(userPasswordDto.user.Id, default))
+            {
+                return BadRequest(_errorResources.CannotSetId());
+            }
+
+            //Create User
+            var (identityResult, userId) = await _identityService.CreateUserAsync(userPasswordDto.user);
+            var createdUser = await _identityService.GetUserAsync(userId.ToString());
+
+            //Add Role to the new User
+            var role = await _identityService.GetRoleAsync("e313a205-0540-4d04-b0a7-ca0052804c06");
+            var userAndRole = new UserRoleApiDto<TKey>();
+            userAndRole.UserId = createdUser.Id;
+            userAndRole.RoleId = role.Id;
+
+            var userRolesDto = _mapper.Map<TUserRolesDto>(userAndRole);
+            await _identityService.CreateUserRoleAsync(userRolesDto);
+
+            //Set User Password
+            userPasswordDto.password.UserId = createdUser.Id;
+            var userChangePasswordDto = _mapper.Map<TUserChangePasswordDto>(userPasswordDto.password);
+            await _identityService.UserChangePasswordAsync(userChangePasswordDto);
+
+            return CreatedAtAction(nameof(Get), new { id = createdUser.Id }, createdUser);
+        }
     }
 }
 
