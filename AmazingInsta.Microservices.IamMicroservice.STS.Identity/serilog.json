@@ -20,7 +20,7 @@
             {
                 "Name": "MSSqlServer",
                 "Args": {
-                    "connectionString": "Server=(localdb)\\mssqllocaldb;Database=IdentityServer4Admin;Trusted_Connection=True;MultipleActiveResultSets=true",
+                    "connectionString": "Server=tcp:amazinginsta-gustavo-db-server.database.windows.net,1433;Initial Catalog=amazinginsta-gustavo-db;Persist Security Info=False;User ID=gustavo;Password=@dsInf123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
                     "tableName": "Log",
                     "columnOptionsSection": {
                         "addStandardColumns": [ "LogEvent" ],

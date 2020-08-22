@@ -1,4 +1,4 @@
-namespace AmazingInsta.Microservices.IamMicroservice.Admin.Api.Dtos.PersistedGrants
+﻿namespace AmazingInsta.Microservices.IamMicroservice.Admin.Api.Dtos.PersistedGrants
 {
     public class PersistedGrantSubjectApiDto
     {

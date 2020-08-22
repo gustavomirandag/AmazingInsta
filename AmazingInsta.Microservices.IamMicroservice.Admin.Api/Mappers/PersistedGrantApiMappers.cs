@@ -1,4 +1,4 @@
-using AutoMapper;
+﻿using AutoMapper;
 
 namespace AmazingInsta.Microservices.IamMicroservice.Admin.Api.Mappers
 {

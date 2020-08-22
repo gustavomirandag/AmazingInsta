@@ -1,4 +1,4 @@
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace AmazingInsta.Microservices.IamMicroservice.STS.Identity.ViewModels.Manage
 {

@@ -1,4 +1,4 @@
-namespace AmazingInsta.Microservices.IamMicroservice.Admin.Api.Dtos.IdentityResources
+﻿namespace AmazingInsta.Microservices.IamMicroservice.Admin.Api.Dtos.IdentityResources
 {
     public class IdentityResourcePropertyApiDto
     {

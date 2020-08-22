@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using AmazingInsta.Microservices.IamMicroservice.Admin.Configuration.Interfaces;
 
 namespace AmazingInsta.Microservices.IamMicroservice.Admin.ViewComponents

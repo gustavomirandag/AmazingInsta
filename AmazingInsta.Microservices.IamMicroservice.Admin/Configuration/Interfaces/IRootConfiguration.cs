@@ -1,4 +1,4 @@
-namespace AmazingInsta.Microservices.IamMicroservice.Admin.Configuration.Interfaces
+﻿namespace AmazingInsta.Microservices.IamMicroservice.Admin.Configuration.Interfaces
 {
     public interface IRootConfiguration
     {

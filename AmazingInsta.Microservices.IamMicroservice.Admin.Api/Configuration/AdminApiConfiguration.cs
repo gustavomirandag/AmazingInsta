@@ -1,4 +1,4 @@
-namespace AmazingInsta.Microservices.IamMicroservice.Admin.Api.Configuration
+﻿namespace AmazingInsta.Microservices.IamMicroservice.Admin.Api.Configuration
 {
     public class AdminApiConfiguration
     {

@@ -1,4 +1,4 @@
-namespace AmazingInsta.Microservices.IamMicroservice.Admin.Configuration
+﻿namespace AmazingInsta.Microservices.IamMicroservice.Admin.Configuration
 {
     public class AuditLoggingConfiguration
     {

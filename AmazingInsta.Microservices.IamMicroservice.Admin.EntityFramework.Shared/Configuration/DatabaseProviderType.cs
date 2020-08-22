@@ -1,4 +1,4 @@
-namespace AmazingInsta.Microservices.IamMicroservice.Admin.EntityFramework.Shared.Configuration
+﻿namespace AmazingInsta.Microservices.IamMicroservice.Admin.EntityFramework.Shared.Configuration
 {
     public enum DatabaseProviderType
     {

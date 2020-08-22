@@ -1,4 +1,4 @@
-namespace AmazingInsta.Microservices.IamMicroservice.Admin.Configuration.Constants
+﻿namespace AmazingInsta.Microservices.IamMicroservice.Admin.Configuration.Constants
 {
     public class AuthenticationConsts
     {

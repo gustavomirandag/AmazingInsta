@@ -1,4 +1,4 @@
-using AmazingInsta.Microservices.IamMicroservice.Admin.Configuration.Interfaces;
+﻿using AmazingInsta.Microservices.IamMicroservice.Admin.Configuration.Interfaces;
 
 namespace AmazingInsta.Microservices.IamMicroservice.Admin.Configuration
 {

@@ -1,5 +1,4 @@
-using IdentityServer4.AccessTokenValidation;
-using Microsoft.AspNetCore.Authentication.Cookies;
+﻿using IdentityServer4.AccessTokenValidation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -9,6 +8,7 @@ using AmazingInsta.Microservices.IamMicroservice.Admin.Api.Helpers;
 using AmazingInsta.Microservices.IamMicroservice.Admin.Api.Middlewares;
 using AmazingInsta.Microservices.IamMicroservice.Admin.EntityFramework.Shared.DbContexts;
 using AmazingInsta.Microservices.IamMicroservice.Admin.EntityFramework.Shared.Entities.Identity;
+using AmazingInsta.Microservices.IamMicroservice.Shared.Configuration.Identity;
 
 namespace AmazingInsta.Microservices.IamMicroservice.Admin.Api.Configuration.Test
 {
@@ -20,12 +20,13 @@ namespace AmazingInsta.Microservices.IamMicroservice.Admin.Api.Configuration.Tes
 
         public override void RegisterDbContexts(IServiceCollection services)
         {
-            services.RegisterDbContextsStaging<AdminIdentityDbContext, IdentityServerConfigurationDbContext, IdentityServerPersistedGrantDbContext, AdminLogDbContext, AdminAuditLogDbContext>();
+            services.RegisterDbContextsStaging<AdminIdentityDbContext, IdentityServerConfigurationDbContext, IdentityServerPersistedGrantDbContext, AdminLogDbContext, AdminAuditLogDbContext, IdentityServerDataProtectionDbContext>();
         }
 
         public override void RegisterAuthentication(IServiceCollection services)
         {
-            services.AddIdentity<UserIdentity, UserIdentityRole>(options => { options.User.RequireUniqueEmail = true; })
+            services
+                .AddIdentity<UserIdentity, UserIdentityRole>(options => Configuration.GetSection(nameof(IdentityOptions)).Bind(options))
                 .AddEntityFrameworkStores<AdminIdentityDbContext>()
                 .AddDefaultTokenProviders();
 

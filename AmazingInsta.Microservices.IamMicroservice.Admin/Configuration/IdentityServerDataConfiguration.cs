@@ -1,4 +1,4 @@
-using IdentityServer4.Models;
+﻿using IdentityServer4.Models;
 using System.Collections.Generic;
 using Client = AmazingInsta.Microservices.IamMicroservice.Admin.Configuration.IdentityServer.Client;
 

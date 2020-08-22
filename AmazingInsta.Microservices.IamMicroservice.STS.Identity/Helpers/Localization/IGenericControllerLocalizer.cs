@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Microsoft.Extensions.Localization;
 
 namespace AmazingInsta.Microservices.IamMicroservice.STS.Identity.Helpers.Localization

@@ -1,3 +1,4 @@
+﻿using AmazingInsta.Microservices.IamMicroservice.Shared.Configuration.Identity;
 using AmazingInsta.Microservices.IamMicroservice.STS.Identity.Configuration.Interfaces;
 
 namespace AmazingInsta.Microservices.IamMicroservice.STS.Identity.Configuration

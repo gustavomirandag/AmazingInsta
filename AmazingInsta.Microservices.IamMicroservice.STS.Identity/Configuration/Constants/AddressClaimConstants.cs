@@ -1,4 +1,4 @@
-namespace AmazingInsta.Microservices.IamMicroservice.STS.Identity.Configuration.Constants
+﻿namespace AmazingInsta.Microservices.IamMicroservice.STS.Identity.Configuration.Constants
 {
     public static class AddressClaimConstants
     {

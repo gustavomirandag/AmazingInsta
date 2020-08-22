@@ -1,4 +1,4 @@
-namespace AmazingInsta.Microservices.IamMicroservice.Admin.Api.ExceptionHandling
+﻿namespace AmazingInsta.Microservices.IamMicroservice.Admin.Api.ExceptionHandling
 {
     public class ApiError
     {

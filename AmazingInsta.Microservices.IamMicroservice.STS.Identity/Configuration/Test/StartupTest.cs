@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using AmazingInsta.Microservices.IamMicroservice.Admin.EntityFramework.Shared.DbContexts;
@@ -14,7 +14,7 @@ namespace AmazingInsta.Microservices.IamMicroservice.STS.Identity.Configuration.
 
         public override void RegisterDbContexts(IServiceCollection services)
         {
-            services.RegisterDbContextsStaging<AdminIdentityDbContext, IdentityServerConfigurationDbContext, IdentityServerPersistedGrantDbContext>();
+            services.RegisterDbContextsStaging<AdminIdentityDbContext, IdentityServerConfigurationDbContext, IdentityServerPersistedGrantDbContext, IdentityServerDataProtectionDbContext>();
         }
     }
 }

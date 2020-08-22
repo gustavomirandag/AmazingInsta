@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace AmazingInsta.Microservices.IamMicroservice.Admin.EntityFramework.PostgreSQL.Migrations.IdentityServerGrants

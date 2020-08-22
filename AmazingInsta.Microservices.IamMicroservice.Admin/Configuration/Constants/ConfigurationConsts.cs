@@ -1,4 +1,4 @@
-namespace AmazingInsta.Microservices.IamMicroservice.Admin.Configuration.Constants
+﻿namespace AmazingInsta.Microservices.IamMicroservice.Admin.Configuration.Constants
 {
     public class ConfigurationConsts
     {
@@ -21,6 +21,8 @@ namespace AmazingInsta.Microservices.IamMicroservice.Admin.Configuration.Constan
         public const string IdentityDataConfigurationKey = "IdentityData";
 
         public const string AdminAuditLogDbConnectionStringKey = "AdminAuditLogDbConnection";
+
+        public const string DataProtectionDbConnectionStringKey = "DataProtectionDbConnection";
     }
 }
 

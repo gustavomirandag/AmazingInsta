@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using AmazingInsta.Microservices.IamMicroservice.STS.Identity.Configuration.Interfaces;
 
 namespace AmazingInsta.Microservices.IamMicroservice.STS.Identity.ViewComponents

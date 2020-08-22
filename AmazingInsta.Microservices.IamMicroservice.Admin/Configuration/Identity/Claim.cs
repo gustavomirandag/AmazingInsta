@@ -1,4 +1,4 @@
-namespace AmazingInsta.Microservices.IamMicroservice.Admin.Configuration.Identity
+﻿namespace AmazingInsta.Microservices.IamMicroservice.Admin.Configuration.Identity
 {
     public class Claim
     {

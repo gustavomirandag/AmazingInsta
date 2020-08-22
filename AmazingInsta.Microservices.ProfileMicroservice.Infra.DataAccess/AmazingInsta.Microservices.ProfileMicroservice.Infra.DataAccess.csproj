@@ -13,8 +13,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\AmazingInsta.Microservices.ProfileMicroservice.Domain\AmazingInsta.Microservices.ProfileMicroservice.Domain.csproj" />
-  </ItemGroup>
-
 </Project>

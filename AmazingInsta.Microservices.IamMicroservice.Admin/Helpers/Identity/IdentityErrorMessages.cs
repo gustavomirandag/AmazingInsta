@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Localization;
 
 namespace AmazingInsta.Microservices.IamMicroservice.Admin.Helpers.Identity

@@ -6,11 +6,11 @@ namespace AmazingInsta.Microservices.PostMicroservice.Domain.AggregatesModel.Pos
 {
     public class PostService
     {
-        private PostContext 
+        //private PostContext 
 
-        public bool AddPost(Post post)
-        {
+        //public bool AddPost(Post post)
+        //{
 
-        }
+        //}
     }
 }

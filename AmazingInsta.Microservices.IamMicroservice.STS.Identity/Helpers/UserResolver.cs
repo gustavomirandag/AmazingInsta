@@ -1,6 +1,7 @@
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using AmazingInsta.Microservices.IamMicroservice.STS.Identity.Configuration;
 using System.Threading.Tasks;
+using AmazingInsta.Microservices.IamMicroservice.Shared.Configuration.Identity;
 
 namespace AmazingInsta.Microservices.IamMicroservice.STS.Identity.Helpers
 {

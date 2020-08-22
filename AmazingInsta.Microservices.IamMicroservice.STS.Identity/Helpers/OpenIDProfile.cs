@@ -1,4 +1,4 @@
-namespace AmazingInsta.Microservices.IamMicroservice.STS.Identity.Helpers
+﻿namespace AmazingInsta.Microservices.IamMicroservice.STS.Identity.Helpers
 {
     public class OpenIdProfile
     {

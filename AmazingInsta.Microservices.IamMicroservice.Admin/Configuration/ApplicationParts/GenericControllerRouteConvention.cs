@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc.ApplicationModels;
+﻿using Microsoft.AspNetCore.Mvc.ApplicationModels;
 
 namespace AmazingInsta.Microservices.IamMicroservice.Admin.Configuration.ApplicationParts
 {

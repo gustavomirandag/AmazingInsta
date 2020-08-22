@@ -3,8 +3,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "https://amazinginsta-gustavo-iammicroservice-identity.azurewebsites.net",
-      "sslPort": 44360
+      "applicationUrl": "https://localhost:44310",
+      "sslPort": 44310
     }
   },
   "profiles": {
@@ -21,13 +21,14 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "https://localhost:5001;https://amazinginsta-gustavo-iammicroservice-identity.azurewebsites.net"
+      "applicationUrl": "https://localhost:44310"
     },
-    "Docker": {
+    "Docker (1)": {
       "commandName": "Docker",
       "launchBrowser": true,
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
-      "httpPort": 10000
+      "publishAllPorts": true,
+      "useSSL": true
     }
   }
 }

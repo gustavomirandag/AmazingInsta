@@ -1,4 +1,4 @@
-namespace AmazingInsta.Microservices.IamMicroservice.Admin.EntityFramework.Shared.Constants
+﻿namespace AmazingInsta.Microservices.IamMicroservice.Admin.EntityFramework.Shared.Constants
 {
     public static class TableConsts
     {

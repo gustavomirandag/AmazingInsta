@@ -1,4 +1,4 @@
-namespace AmazingInsta.Microservices.IamMicroservice.STS.Identity.Configuration
+﻿namespace AmazingInsta.Microservices.IamMicroservice.STS.Identity.Configuration
 {
     public class ExternalProvidersConfiguration
     {

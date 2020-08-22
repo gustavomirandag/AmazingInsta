@@ -25,18 +25,20 @@ namespace AmazingInsta.App.UI.WebApp.Controllers
         // GET: Posts
         public async Task<IActionResult> Index()
         {
-            var httpClient = new HttpClient();
-            httpClient.DefaultRequestHeaders.Add("Authorize", "bearer TOKEN_AQUI");
-            var result = await httpClient.GetAsync("https://amazinginsta-postmicroservice-api-gustavo.azurewebsites.net/api/posts");
+            var posts = await _context.Posts.ToListAsync();
+
+            //var httpClient = new HttpClient();
+            //httpClient.DefaultRequestHeaders.Add("Authorize", "bearer TOKEN_AQUI");
+            //var result = await httpClient.GetAsync("https://amazinginsta-postmicroservice-api-gustavo.azurewebsites.net/api/posts");
 
 
-            if (!result.IsSuccessStatusCode)
-                return BadRequest();
+            //if (!result.IsSuccessStatusCode)
+            //    return BadRequest();
 
-            var serializedPosts = await result.Content.ReadAsStringAsync();
-            var postsViewModel = JsonConvert.DeserializeObject<IEnumerable<PostViewModel>>(serializedPosts);
+            //var serializedPosts = await result.Content.ReadAsStringAsync();
+            //var postsViewModel = JsonConvert.DeserializeObject<IEnumerable<PostViewModel>>(serializedPosts);
 
-            return View(postsViewModel);
+            return View(posts);
         }
 
         // GET: Posts/Details/5

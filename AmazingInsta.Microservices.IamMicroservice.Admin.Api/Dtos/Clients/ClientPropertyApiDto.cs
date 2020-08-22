@@ -1,4 +1,4 @@
-namespace AmazingInsta.Microservices.IamMicroservice.Admin.Api.Dtos.Clients
+﻿namespace AmazingInsta.Microservices.IamMicroservice.Admin.Api.Dtos.Clients
 {
     public class ClientPropertyApiDto
     {

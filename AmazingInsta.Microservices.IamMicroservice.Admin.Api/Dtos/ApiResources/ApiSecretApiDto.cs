@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace AmazingInsta.Microservices.IamMicroservice.Admin.Api.Dtos.ApiResources

@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using AmazingInsta.Microservices.IamMicroservice.Admin.Configuration.Identity;
 
 namespace AmazingInsta.Microservices.IamMicroservice.Admin.Configuration.IdentityServer

@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Razor.TagHelpers;
+﻿using Microsoft.AspNetCore.Razor.TagHelpers;
 
 namespace AmazingInsta.Microservices.IamMicroservice.STS.Identity.Helpers.TagHelpers
 {

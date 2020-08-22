@@ -1,4 +1,4 @@
-namespace AmazingInsta.Microservices.IamMicroservice.STS.Identity.ViewModels.Manage
+﻿namespace AmazingInsta.Microservices.IamMicroservice.STS.Identity.ViewModels.Manage
 {
     public class ShowRecoveryCodesViewModel
     {

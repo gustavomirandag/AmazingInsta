@@ -1,8 +1,8 @@
-namespace AmazingInsta.Microservices.IamMicroservice.Admin.Api.Dtos.Users
+﻿namespace AmazingInsta.Microservices.IamMicroservice.Admin.Api.Dtos.Users
 {
-    public class UserProviderApiDto<TUserDtoKey>
+    public class UserProviderApiDto<TKey>
     {
-        public TUserDtoKey UserId { get; set; }
+        public TKey UserId { get; set; }
 
         public string UserName { get; set; }
 

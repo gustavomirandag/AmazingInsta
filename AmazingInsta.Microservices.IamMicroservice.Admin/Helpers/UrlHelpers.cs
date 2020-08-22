@@ -1,4 +1,4 @@
-namespace AmazingInsta.Microservices.IamMicroservice.Admin.Helpers
+﻿namespace AmazingInsta.Microservices.IamMicroservice.Admin.Helpers
 {
     public static class UrlHelpers
     {

@@ -23,6 +23,7 @@ namespace AmazingInsta.Microservices.PostMicroservice.Application.Api.Controller
         }
 
         // GET: api/Posts
+        [Authorize(Roles = "Profile")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Post>>> GetPosts()
         {
