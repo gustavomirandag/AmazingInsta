@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 
-namespace AmazingInsta.App.UI.WebApp.Models
+namespace AmazingInsta.App.Application.Models.ViewModels
 {
     public class PostViewModel
     {
@@ -12,5 +11,6 @@ namespace AmazingInsta.App.UI.WebApp.Models
         public DateTime PublishDateTime { get; set; }
         public string PhotoUrl { get; set; }
         public string Message { get; set; }
+
     }
 }

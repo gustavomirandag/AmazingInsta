@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AmazingInsta.App.Application;
+using AmazingInsta.Common.Domain.Services;
+using AmazingInsta.Common.Infra.Helper.Serializers;
 using AmazingInsta.Microservices.PostMicroservice.Infra.DataAccess.Contexts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -26,6 +29,17 @@ namespace AmazingInsta.App.UI.WebApp
         {
             services.AddControllersWithViews();
             services.AddDbContext<PostContext>();
+
+            services.AddScoped<ISerializerService, SerializerService>();
+            services.AddScoped<IAppService, AppService>();
+
+            services.AddDistributedMemoryCache();
+            services.AddSession(options =>
+            {
+                options.Cookie.Name = "AmazingInsta.Profile";
+                options.IdleTimeout = TimeSpan.FromSeconds(10);
+                options.Cookie.IsEssential = true;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,6 +57,8 @@ namespace AmazingInsta.App.UI.WebApp
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            app.UseSession();
 
             app.UseRouting();
 

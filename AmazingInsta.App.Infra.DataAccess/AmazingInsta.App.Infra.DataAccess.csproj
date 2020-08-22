@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AmazingInsta.App.Domain\AmazingInsta.App.Domain.csproj" />
+    <ProjectReference Include="..\AmazingInsta.Common.Domain\AmazingInsta.Common.Domain.csproj" />
+    <ProjectReference Include="..\AmazingInsta.Microservices.PostMicroservice.Domain\AmazingInsta.Microservices.PostMicroservice.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

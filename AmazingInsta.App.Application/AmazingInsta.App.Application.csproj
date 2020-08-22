@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\Dtos\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="4.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AmazingInsta.App.Domain\AmazingInsta.App.Domain.csproj" />
+    <ProjectReference Include="..\AmazingInsta.App.Infra.DataAccess\AmazingInsta.App.Infra.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -10,33 +10,27 @@ using AmazingInsta.Microservices.PostMicroservice.Infra.DataAccess.Contexts;
 using System.Net.Http;
 using Newtonsoft.Json;
 using AmazingInsta.App.UI.WebApp.Models;
+using AmazingInsta.App.Application;
+using Microsoft.AspNetCore.Http;
 
 namespace AmazingInsta.App.UI.WebApp.Controllers
 {
     public class PostsController : Controller
     {
+        private readonly IAppService appService;
         private readonly PostContext _context;
 
-        public PostsController(PostContext context)
+        public PostsController(IAppService appService, PostContext context)
         {
+            this.appService = appService;
             _context = context;
         }
 
         // GET: Posts
         public async Task<IActionResult> Index()
         {
-            var posts = await _context.Posts.ToListAsync();
-
-            //var httpClient = new HttpClient();
-            //httpClient.DefaultRequestHeaders.Add("Authorize", "bearer TOKEN_AQUI");
-            //var result = await httpClient.GetAsync("https://amazinginsta-postmicroservice-api-gustavo.azurewebsites.net/api/posts");
-
-
-            //if (!result.IsSuccessStatusCode)
-            //    return BadRequest();
-
-            //var serializedPosts = await result.Content.ReadAsStringAsync();
-            //var postsViewModel = JsonConvert.DeserializeObject<IEnumerable<PostViewModel>>(serializedPosts);
+            var token = HttpContext.Session.GetString("Token");
+            var posts = await appService.GetAllPostsAsync(token);
 
             return View(posts);
         }
