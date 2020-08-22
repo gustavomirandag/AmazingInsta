@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace AmazingInsta.Microservices.PostMicroservice.Application.Api.Controllers
 {
+    [Authorize(Roles = "Profile")]
     [Route("api/[controller]")]
     [ApiController]
     public class PostsController : ControllerBase
@@ -23,7 +24,6 @@ namespace AmazingInsta.Microservices.PostMicroservice.Application.Api.Controller
         }
 
         // GET: api/Posts
-        [Authorize(Roles = "Profile")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Post>>> GetPosts()
         {
@@ -82,6 +82,8 @@ namespace AmazingInsta.Microservices.PostMicroservice.Application.Api.Controller
         [HttpPost]
         public async Task<ActionResult<Post>> PostPost(Post post)
         {
+            post.ProfileId = Guid.Parse(User.FindFirst("sub")?.Value);
+            post.Id = Guid.NewGuid();
             _context.Posts.Add(post);
             await _context.SaveChangesAsync();
 

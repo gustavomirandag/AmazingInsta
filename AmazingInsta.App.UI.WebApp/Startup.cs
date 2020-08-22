@@ -37,7 +37,7 @@ namespace AmazingInsta.App.UI.WebApp
             services.AddSession(options =>
             {
                 options.Cookie.Name = "AmazingInsta.Profile";
-                options.IdleTimeout = TimeSpan.FromSeconds(10);
+                options.IdleTimeout = TimeSpan.FromSeconds(60000);
                 options.Cookie.IsEssential = true;
             });
         }

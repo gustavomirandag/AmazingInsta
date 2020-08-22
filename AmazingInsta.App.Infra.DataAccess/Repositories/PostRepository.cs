@@ -20,9 +20,13 @@ namespace AmazingInsta.App.Infra.DataAccess.Repositories
             this.token = token;
         }
 
-        public Task CreateAsync(Post entity)
+        public async Task CreateAsync(Post entity)
         {
-            throw new NotImplementedException();
+            var httpClient = new HttpClient();
+            httpClient.DefaultRequestHeaders.Add("Authorization", "bearer " + token);
+            var serializedPost = serializerService.Serialize(entity);
+            var httpContent = new StringContent(serializedPost, Encoding.UTF8, "application/json");
+            await httpClient.PostAsync("https://amazinginsta-postmicroservice-api-gustavo.azurewebsites.net/api/posts",httpContent);        
         }
 
         public Task DeleteAsync(Guid id)

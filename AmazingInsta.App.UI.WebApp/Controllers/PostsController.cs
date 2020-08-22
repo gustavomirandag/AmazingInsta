@@ -64,13 +64,12 @@ namespace AmazingInsta.App.UI.WebApp.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ProfileId,PublishDateTime,PhotoUrl,Message")] Post post)
+        public async Task<IActionResult> Create([Bind("Id,ProfileId,PublishDateTime,PhotoUrl,Message")] App.Domain.Post post)
         {
             if (ModelState.IsValid)
             {
-                post.Id = Guid.NewGuid();
-                _context.Add(post);
-                await _context.SaveChangesAsync();
+                var token = HttpContext.Session.GetString("Token");
+                await appService.AddPostAsync(token, post);
                 return RedirectToAction(nameof(Index));
             }
             return View(post);
