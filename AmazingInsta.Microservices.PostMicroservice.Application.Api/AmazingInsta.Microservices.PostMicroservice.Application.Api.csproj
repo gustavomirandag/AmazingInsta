@@ -15,6 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AmazingInsta.App.Domain\AmazingInsta.App.Domain.csproj" />
+    <ProjectReference Include="..\AmazingInsta.App.Infra.DataAccess\AmazingInsta.App.Infra.DataAccess.csproj" />
+    <ProjectReference Include="..\AmazingInsta.Common.Infra.Messaging\AmazingInsta.Common.Infra.Messaging.csproj" />
+    <ProjectReference Include="..\AmazingInsta.Microservices.PostMicroservice.Application\AmazingInsta.Microservices.PostMicroservice.Application.csproj" />
     <ProjectReference Include="..\AmazingInsta.Microservices.PostMicroservice.Domain\AmazingInsta.Microservices.PostMicroservice.Domain.csproj" />
     <ProjectReference Include="..\AmazingInsta.Microservices.PostMicroservice.Infra.DataAccess\AmazingInsta.Microservices.PostMicroservice.Infra.DataAccess.csproj" />
   </ItemGroup>

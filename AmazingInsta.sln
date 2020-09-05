@@ -61,15 +61,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.Microservices.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.Microservices.IamMicroservice.STS.Identity", "AmazingInsta.Microservices.IamMicroservice.STS.Identity\AmazingInsta.Microservices.IamMicroservice.STS.Identity.csproj", "{C21D07EF-90DF-4851-8658-22F80A08F2AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingInsta.Common.Infra.DataAccess", "AmazingInsta.Common.Infra.DataAccess\AmazingInsta.Common.Infra.DataAccess.csproj", "{B678EF53-4829-4D6D-A0EC-EA9BCE00E8EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.Common.Infra.DataAccess", "AmazingInsta.Common.Infra.DataAccess\AmazingInsta.Common.Infra.DataAccess.csproj", "{B678EF53-4829-4D6D-A0EC-EA9BCE00E8EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingInsta.Common.Infra.Helper", "AmazingInsta.Common.Infra.Helper\AmazingInsta.Common.Infra.Helper.csproj", "{1752F23D-4F30-4796-82BC-1590E086593A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.Common.Infra.Helper", "AmazingInsta.Common.Infra.Helper\AmazingInsta.Common.Infra.Helper.csproj", "{1752F23D-4F30-4796-82BC-1590E086593A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingInsta.App.Domain", "AmazingInsta.App.Domain\AmazingInsta.App.Domain.csproj", "{A7854DE7-C9C3-4BDE-A5EF-46A4AEB72EB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.App.Domain", "AmazingInsta.App.Domain\AmazingInsta.App.Domain.csproj", "{A7854DE7-C9C3-4BDE-A5EF-46A4AEB72EB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingInsta.App.Infra.DataAccess", "AmazingInsta.App.Infra.DataAccess\AmazingInsta.App.Infra.DataAccess.csproj", "{C40B341A-C2BC-495C-B5DF-B8D9E7249861}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.App.Infra.DataAccess", "AmazingInsta.App.Infra.DataAccess\AmazingInsta.App.Infra.DataAccess.csproj", "{C40B341A-C2BC-495C-B5DF-B8D9E7249861}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingInsta.App.Application", "AmazingInsta.App.Application\AmazingInsta.App.Application.csproj", "{27CF7D91-FC11-4B98-9238-79BDA854330D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.App.Application", "AmazingInsta.App.Application\AmazingInsta.App.Application.csproj", "{27CF7D91-FC11-4B98-9238-79BDA854330D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.Microservices.PostMicroservice.Application", "AmazingInsta.Microservices.PostMicroservice.Application\AmazingInsta.Microservices.PostMicroservice.Application.csproj", "{658ED9D7-7A4B-4474-997F-EE55482D324A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.Common.Infra.Messaging", "AmazingInsta.Common.Infra.Messaging\AmazingInsta.Common.Infra.Messaging.csproj", "{1EAAF97C-99FF-42CD-868A-6E174BFC0B06}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingInsta.Common.Application", "AmazingInsta.Common.Application\AmazingInsta.Common.Application.csproj", "{76901C5F-7891-4CBB-8DE3-895CA367C42D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingInsta.Microservices.PostMicroservice.PostWorker", "AmazingInsta.Microservices.PostMicroservice.PostWorker\AmazingInsta.Microservices.PostMicroservice.PostWorker.csproj", "{A7E87D6B-401A-47DD-8D7D-CB142D0ABE57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -149,6 +157,22 @@ Global
 		{27CF7D91-FC11-4B98-9238-79BDA854330D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27CF7D91-FC11-4B98-9238-79BDA854330D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27CF7D91-FC11-4B98-9238-79BDA854330D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{658ED9D7-7A4B-4474-997F-EE55482D324A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{658ED9D7-7A4B-4474-997F-EE55482D324A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{658ED9D7-7A4B-4474-997F-EE55482D324A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{658ED9D7-7A4B-4474-997F-EE55482D324A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EAAF97C-99FF-42CD-868A-6E174BFC0B06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EAAF97C-99FF-42CD-868A-6E174BFC0B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EAAF97C-99FF-42CD-868A-6E174BFC0B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EAAF97C-99FF-42CD-868A-6E174BFC0B06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76901C5F-7891-4CBB-8DE3-895CA367C42D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76901C5F-7891-4CBB-8DE3-895CA367C42D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76901C5F-7891-4CBB-8DE3-895CA367C42D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76901C5F-7891-4CBB-8DE3-895CA367C42D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7E87D6B-401A-47DD-8D7D-CB142D0ABE57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7E87D6B-401A-47DD-8D7D-CB142D0ABE57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7E87D6B-401A-47DD-8D7D-CB142D0ABE57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7E87D6B-401A-47DD-8D7D-CB142D0ABE57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -185,6 +209,10 @@ Global
 		{A7854DE7-C9C3-4BDE-A5EF-46A4AEB72EB3} = {D02A4606-57C0-41E7-8FAB-5EB542BF5F00}
 		{C40B341A-C2BC-495C-B5DF-B8D9E7249861} = {3B16C669-5172-4117-88BE-F6FFFF8675E9}
 		{27CF7D91-FC11-4B98-9238-79BDA854330D} = {C68556C4-043A-4049-97AE-0514DF589E4A}
+		{658ED9D7-7A4B-4474-997F-EE55482D324A} = {99AFAA7E-90B9-46CC-92A2-1F410D61604E}
+		{1EAAF97C-99FF-42CD-868A-6E174BFC0B06} = {B7D21CD0-7A30-4B91-AAF8-5687D7640441}
+		{76901C5F-7891-4CBB-8DE3-895CA367C42D} = {B7D21CD0-7A30-4B91-AAF8-5687D7640441}
+		{A7E87D6B-401A-47DD-8D7D-CB142D0ABE57} = {99AFAA7E-90B9-46CC-92A2-1F410D61604E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4948EDFA-AA2E-4574-AA7B-212BA2B04BCE}

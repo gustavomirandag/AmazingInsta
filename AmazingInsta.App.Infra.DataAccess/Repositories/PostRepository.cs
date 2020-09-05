@@ -27,6 +27,7 @@ namespace AmazingInsta.App.Infra.DataAccess.Repositories
             var serializedPost = serializerService.Serialize(entity);
             var httpContent = new StringContent(serializedPost, Encoding.UTF8, "application/json");
             await httpClient.PostAsync("https://amazinginsta-postmicroservice-api-gustavo.azurewebsites.net/api/posts",httpContent);        
+            //await httpClient.PostAsync("http://localhost:53913/api/posts", httpContent);
         }
 
         public Task DeleteAsync(Guid id)
@@ -39,6 +40,7 @@ namespace AmazingInsta.App.Infra.DataAccess.Repositories
             var httpClient = new HttpClient();
             httpClient.DefaultRequestHeaders.Add("Authorization", "bearer " + token);
             var result = httpClient.GetAsync("https://amazinginsta-postmicroservice-api-gustavo.azurewebsites.net/api/posts").Result;
+            //var result = httpClient.GetAsync("http://localhost:53913/api/posts").Result;
 
             if (!result.IsSuccessStatusCode)
                 return new List<Post>();

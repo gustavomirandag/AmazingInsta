@@ -2,12 +2,19 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AmazingInsta.Common.Application.CQRS.Messaging;
+using AmazingInsta.Common.Domain.Services;
+using AmazingInsta.Common.Infra.Helper.Serializers;
+using AmazingInsta.Common.Infra.Messaging.Services;
+using AmazingInsta.Microservices.PostMicroservice.Domain.AggregatesModel.PostAggregate;
 using AmazingInsta.Microservices.PostMicroservice.Infra.DataAccess.Contexts;
+using AmazingInsta.Microservices.PostMicroservice.Infra.DataAccess.Repositories;
 using IdentityServer4.AccessTokenValidation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -29,6 +36,12 @@ namespace AmazingInsta.Microservices.PostMicroservice.Application.Api
         {
             services.AddControllers();
             services.AddDbContext<PostContext>();
+            services.AddScoped<DbContext, PostContext>();
+            services.AddScoped<IPostRepository, PostRepository>();
+            services.AddScoped<IPostService, PostService>();
+            services.AddScoped<ISerializerService, SerializerService>();
+            services.AddScoped<IApiApplicationService, ApiApplicationService>();
+            services.AddScoped<IMediatorHandler, AzureServiceBusQueue>();
 
             services.AddAuthorization();
             services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)

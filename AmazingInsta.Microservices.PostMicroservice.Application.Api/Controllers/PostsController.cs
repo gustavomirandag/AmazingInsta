@@ -17,10 +17,12 @@ namespace AmazingInsta.Microservices.PostMicroservice.Application.Api.Controller
     public class PostsController : ControllerBase
     {
         private readonly PostContext _context;
+        private readonly IApiApplicationService _apiApplicationService;
 
-        public PostsController(PostContext context)
+        public PostsController(PostContext context, IApiApplicationService apiApplicationService)
         {
             _context = context;
+            _apiApplicationService = apiApplicationService;
         }
 
         // GET: api/Posts
@@ -82,10 +84,8 @@ namespace AmazingInsta.Microservices.PostMicroservice.Application.Api.Controller
         [HttpPost]
         public async Task<ActionResult<Post>> PostPost(Post post)
         {
-            post.ProfileId = Guid.Parse(User.FindFirst("sub")?.Value);
-            post.Id = Guid.NewGuid();
-            _context.Posts.Add(post);
-            await _context.SaveChangesAsync();
+            var profileId = Guid.Parse(User.FindFirst("sub")?.Value);
+            await _apiApplicationService.CreatePostAsync(profileId, post.Message, post.PhotoUrl);
 
             return CreatedAtAction("GetPost", new { id = post.Id }, post);
         }
